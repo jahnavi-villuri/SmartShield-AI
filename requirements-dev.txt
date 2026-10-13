@@ -1,0 +1,6 @@
+-r requirements.txt
+ipykernel==7.4.0
+jupyterlab==4.6.4
+pip-audit==2.10.1
+pytest==9.1.1
+ruff==0.17.0

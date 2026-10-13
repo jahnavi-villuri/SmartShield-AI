@@ -1,0 +1,46 @@
+# Virtual environment
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Datasets: never commit (size, licenses, private data)
+data/raw/*
+data/processed/*
+data/external_test/*
+data/private/*
+!data/**/.gitkeep
+
+# Trained models: rebuilt by scripts (metadata.json files ARE kept)
+models/**/*.joblib
+models/**/*.pkl
+
+# Secrets
+.env
+*.key
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+data/processed/toxicity/errors_*.csv
+
+# Labelling files contain third-party message text and the owner's private labels
+data/labels/*
+!data/labels/.gitkeep
+
+# Error-analysis tables quote real third-party messages/emails: regenerate, never commit
+reports/metrics/**/*false_negatives.csv
+reports/metrics/**/*false_positives.csv
+reports/metrics/**/*missed_spam.csv
+reports/metrics/**/errors_*.csv
+
+# Test-tool output
+.coverage
+.coverage.*
+htmlcov/

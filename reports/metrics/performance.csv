@@ -1,0 +1,5 @@
+detector,model_files_mb,load_seconds,median_ms,p95_ms,items_per_second,samples
+SMS,5.28,0.68,2.36,13.16,242.8,660
+Email,9.73,2.9,4.6,855.29,3.6,680
+Comments,36.8,6.21,7.97,679.79,3.9,720
+URL,11.49,4.05,2.92,4.26,307.1,1520

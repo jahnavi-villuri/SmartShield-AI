@@ -1,0 +1,18 @@
+model,features,params,val_pr_auc,val_roc_auc
+dummy,count_word,{},0.38086707273378717,0.5
+naive_bayes,count_word,"{""alpha"": 0.03}",0.9777708572251403,0.983315483617731
+naive_bayes,count_word,"{""alpha"": 0.1}",0.9776205286700338,0.9828885671448729
+naive_bayes,count_word,"{""alpha"": 0.3}",0.9776725800776368,0.9824377818662676
+naive_bayes,count_word,"{""alpha"": 1.0}",0.9777965049107941,0.9818934778241611
+logreg_word,tfidf_word,"{""C"": 1}",0.9882370309804482,0.9922980995054617
+logreg_word,tfidf_word,"{""C"": 3}",0.9902305085844961,0.9935427479933192
+logreg_word,tfidf_word,"{""C"": 10}",0.9913415197552351,0.994285045735558
+logreg_word,tfidf_word,"{""C"": 30}",0.9915659924847788,0.9945107360969565
+logreg_word,tfidf_word,"{""C"": 100}",0.9909860068738866,0.9941916800862776
+linear_svm_word,tfidf_word,"{""C"": 0.1}",0.9887863346823064,0.9927330459685638
+linear_svm_word,tfidf_word,"{""C"": 0.3}",0.9906855458519955,0.9939006780033797
+linear_svm_word,tfidf_word,"{""C"": 1}",0.9912086135124122,0.9940897230279434
+linear_svm_word,tfidf_word,"{""C"": 3}",0.9907418632630057,0.993656001478607
+logreg_char,tfidf_char,"{""C"": 3}",0.9946480852412641,0.9964487027891014
+logreg_char,tfidf_char,"{""C"": 10}",0.9938528798603143,0.9959862297916451
+logreg_char,tfidf_char,"{""C"": 30}",0.995131549410886,0.9967426820929584

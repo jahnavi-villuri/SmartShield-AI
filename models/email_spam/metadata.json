@@ -1,0 +1,171 @@
+{
+  "module": "email_spam",
+  "created_utc": "2026-10-12T17:32:24+00:00",
+  "python": "3.14.3",
+  "scikit_learn": "1.9.1",
+  "label_convention": "1 = spam (bad), 0 = ham (good)",
+  "model": "logreg_word_masked",
+  "model_params": {
+    "C": 100
+  },
+  "features": "tfidf_word_masked",
+  "score_type": "probability",
+  "threshold": 0.423266518425754,
+  "threshold_rule": "highest validation recall with validation precision >= 0.98",
+  "selection_rule": "best validation PR-AUC; ties (within 0.003) -> ['logreg_word_masked', 'naive_bayes_masked', 'linear_svm_word_masked', 'logreg_word', 'naive_bayes', 'linear_svm_word']; guard: skip candidates flagging > 25% of modern legitimate challenge emails",
+  "guard_passed": true,
+  "private_data": {
+    "emails": 0
+  },
+  "synthetic_data": {
+    "emails": 200,
+    "train_half": 92,
+    "test_half": 108,
+    "repeat": 5
+  },
+  "signature_words_masked": 120,
+  "seed": 42,
+  "data_sizes": {
+    "train": 21554,
+    "val": 4521,
+    "test": 4521,
+    "external_2026_spam": 10228,
+    "challenge": 34
+  },
+  "metrics": {
+    "validation": {
+      "threshold": 0.423266518425754,
+      "accuracy": 0.9865074098650741,
+      "precision": 0.9800904977375565,
+      "recall": 0.9922125515345854,
+      "f1": 0.9861142727065787,
+      "false_positive_rate": 0.018819503849443968,
+      "roc_auc": 0.9989239504108072,
+      "pr_auc": 0.9987891545315493,
+      "tn": 2294,
+      "fp": 44,
+      "fn": 17,
+      "tp": 2166,
+      "n": 4521,
+      "positives": 2183
+    },
+    "test": {
+      "threshold": 0.423266518425754,
+      "accuracy": 0.988940499889405,
+      "precision": 0.9863138686131386,
+      "recall": 0.9908340971585701,
+      "f1": 0.9885688157293095,
+      "false_positive_rate": 0.012825994014536126,
+      "roc_auc": 0.9990832137794987,
+      "pr_auc": 0.9989991991385219,
+      "tn": 2309,
+      "fp": 30,
+      "fn": 20,
+      "tp": 2162,
+      "n": 4521,
+      "positives": 2182
+    },
+    "challenge_modern": {
+      "threshold": 0.423266518425754,
+      "accuracy": 0.7941176470588235,
+      "precision": 0.6,
+      "recall": 0.9,
+      "f1": 0.72,
+      "false_positive_rate": 0.25,
+      "roc_auc": 0.9416666666666667,
+      "pr_auc": 0.8955542986425339,
+      "tn": 18,
+      "fp": 6,
+      "fn": 1,
+      "tp": 9,
+      "n": 34,
+      "positives": 10
+    },
+    "test_dummy_baseline": {
+      "threshold": 0.5,
+      "accuracy": 0.5173634151736342,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.48263658482636584,
+      "tn": 2339,
+      "fp": 0,
+      "fn": 2182,
+      "tp": 0,
+      "n": 4521,
+      "positives": 2182
+    },
+    "test_at_default_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.9893828798938288,
+      "precision": 0.9881061299176578,
+      "recall": 0.9899175068744271,
+      "f1": 0.989010989010989,
+      "false_positive_rate": 0.011115861479264643,
+      "roc_auc": 0.9990832137794987,
+      "pr_auc": 0.9989991991385219,
+      "tn": 2313,
+      "fp": 26,
+      "fn": 22,
+      "tp": 2160,
+      "n": 4521,
+      "positives": 2182
+    },
+    "synthetic_heldout": {
+      "n": 108,
+      "legit": 52,
+      "legit_flagged": 15,
+      "spam": 56,
+      "spam_caught": 53
+    }
+  },
+  "external_2026": {
+    "n": 10228,
+    "detection_rate": 0.6918263590144701,
+    "by_month": {
+      "2026-06": {
+        "n": 5531,
+        "detected": 0.6544928584342795
+      },
+      "2026-07": {
+        "n": 2024,
+        "detected": 0.7445652173913043
+      },
+      "2026-08": {
+        "n": 1416,
+        "detected": 0.7055084745762712
+      },
+      "2026-09": {
+        "n": 1124,
+        "detected": 0.7357651245551602
+      },
+      "2026-10": {
+        "n": 133,
+        "detected": 0.924812030075188
+      }
+    },
+    "by_language": {
+      "ASCII/English-like": {
+        "n": 10115,
+        "detected": 0.6890756302521008
+      },
+      "mostly non-ASCII": {
+        "n": 113,
+        "detected": 0.9380530973451328
+      }
+    }
+  },
+  "inference_ms_per_email": 1.1295280000194907,
+  "model_file_mb": 9.73,
+  "model_sha256": "38b3aa389c49ef9b123b3259d6fc3920d1ee8c766d1152b83babca3a2b7bfbe3",
+  "limitations": [
+    "Trained on Enron-Spam (ham: Enron staff email 1999-2002; spam: 2001-2005). It has never seen a modern legitimate email in training.",
+    "The 2026 spam test has no legitimate email, so it measures detection rate only, not false alarms.",
+    "Only 34 hand-written modern emails (24 legitimate) check false alarms on modern mail; that is a smoke test, not a measurement.",
+    "100 of the extra modern training emails come from a synthetic one-sentence dataset (darkknight25); they teach modern topics but not realistic email structure.",
+    "Part of 2026 spam is not English; the model reads English only.",
+    "Reads only the first 6,000 characters of the body; attachments and images are ignored."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "module": "sms_type",
+  "created_utc": "2026-10-12T05:09:04+00:00",
+  "python": "3.14.3",
+  "scikit_learn": "1.9.1",
+  "classes": {
+    "0": "promotional",
+    "1": "scam"
+  },
+  "model": "logreg_word_norm",
+  "model_params": {
+    "C": 100
+  },
+  "score_type": "probability",
+  "scam_threshold": 0.5,
+  "data_sizes": {
+    "dev": 380,
+    "dev_scam": 123,
+    "test": 71,
+    "test_scam": 19
+  },
+  "labels": "hand-labelled by the AI assistant using docs/sms_type_labeling_guide.md; not verified by a human; unclear messages excluded",
+  "metrics": {
+    "cross_validated_dev": {
+      "threshold": 0.5,
+      "accuracy": 0.9236842105263158,
+      "precision": 0.9051724137931034,
+      "recall": 0.8536585365853658,
+      "f1": 0.8786610878661087,
+      "false_positive_rate": 0.042801556420233464,
+      "roc_auc": 0.9746923539274303,
+      "pr_auc": 0.9590669456131216,
+      "tn": 246,
+      "fp": 11,
+      "fn": 18,
+      "tp": 105,
+      "n": 380,
+      "positives": 123
+    },
+    "test": {
+      "threshold": 0.5,
+      "accuracy": 0.9577464788732394,
+      "precision": 0.9,
+      "recall": 0.9473684210526315,
+      "f1": 0.9230769230769231,
+      "false_positive_rate": 0.038461538461538464,
+      "roc_auc": 0.9908906882591093,
+      "pr_auc": 0.9769473825902752,
+      "tn": 50,
+      "fp": 2,
+      "fn": 1,
+      "tp": 18,
+      "n": 71,
+      "positives": 19
+    }
+  },
+  "majority_class_accuracy_test": 0.7323943661971831,
+  "challenge_type_accuracy": 0.6,
+  "model_sha256": "ad485ea88504c26c756b32fb141f6d28c8a82bbdb6edd443f7e9d05fd40ae0b3",
+  "limitations": [
+    "Trained on only 380 hand-labelled messages; the test set has just 71 messages (19 scams), so its numbers are very noisy.",
+    "Labels come from one labeller (an AI) with written rules; contests and premium-rate services are judgement calls.",
+    "Only meaningful for messages already judged unwanted by the main model."
+  ]
+}

@@ -1,0 +1,24 @@
+# Security and privacy settings for SmartShield AI (see docs/security.md)
+[browser]
+gatherUsageStats = false      # no telemetry
+
+[server]
+enableXsrfProtection = true
+enableCORS = true
+headless = true
+maxMessageSize = 5            # MB; pasted text is capped far below this by the detectors
+
+[client]
+showErrorDetails = false      # users see friendly messages, not stack traces
+toolbarMode = "minimal"
+
+[logger]
+level = "warning"
+
+[theme]
+base = "dark"
+primaryColor = "#f43f5e"
+backgroundColor = "#09090b"
+secondaryBackgroundColor = "#18181b"
+textColor = "#fafafa"
+font = "sans serif"

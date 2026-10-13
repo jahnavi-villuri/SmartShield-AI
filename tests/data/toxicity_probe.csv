@@ -1,0 +1,37 @@
+text,kind,expected
+"He called me an idiot yesterday, so I reported the comment to the moderators.",mention,none
+The word stupid is considered an insult in many contexts.,mention,none
+Please do not use threatening language on this page.,mention,none
+I am not going to insult you; I just disagree with the source.,negation,none
+"You are not an idiot, you simply misread the policy.",negation,none
+Calling another editor a moron is against the rules.,mention,none
+"The new update killed it, the app is so much faster now.",figurative,none
+That movie bombed at the box office last year.,figurative,none
+I hate waiting in traffic on Monday mornings.,mild_negative,none
+This is honestly the worst pizza I have ever eaten.,mild_negative,none
+"Your edit was wrong, but thanks for trying.",criticism,none
+I disagree with you; the source clearly says otherwise.,criticism,none
+The article should include the 2019 census figures.,neutral,none
+Why was my edit reverted? I cited a reliable source.,neutral,none
+Please stop the edit war and discuss it on the talk page.,neutral,none
+Let us assume good faith and wait for other opinions.,neutral,none
+In the final scene the villain is defeated and the city is saved.,violence_in_fiction,none
+The boxer was knocked out in the third round.,violence_in_fiction,none
+"Thank you for the correction, I really appreciate it.",polite,none
+"Great work on the references, this page looks much better now.",polite,none
+Police arrested a suspect after the robbery on Main Street.,news,none
+The study found that online harassment affects mental health.,news,none
+"Nice try, but the citation you added does not support that claim.",criticism,none
+My grandmother is 90 and still beats everyone at chess.,neutral,none
+You are such an idiot.,insult,toxic|insult
+"Shut up, you stupid fool.",insult,toxic|insult
+What a pathetic loser you are.,insult,toxic|insult
+"Nobody likes you, moron.",insult,toxic|insult
+You are a complete waste of space and everyone here knows it.,insult,toxic|insult
+I will find you and hurt you.,threat,toxic|threat
+"Watch your back, I am coming for you.",threat,toxic|threat
+"You will regret this, I promise you will pay for it.",threat,toxic|threat
+This is complete bullshit.,obscene,toxic|obscene
+What the hell is this crap you wrote?,obscene,toxic|obscene
+"Get lost, you annoying jerk.",insult,toxic|insult
+You are dumb and your edits are garbage.,insult,toxic|insult

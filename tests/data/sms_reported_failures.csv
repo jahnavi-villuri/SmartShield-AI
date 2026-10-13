@@ -1,0 +1,3 @@
+text,expected,note
+"Dear UPI user A/C X1234 debited by 320.00 on date 08Oct26 trf to R Kumar Refno 628120475562 If not u? call-1800111109 for other services-18001234-SBI",legitimate,Real bank debit alert (de-identified) reported by the project owner; flagged as spam
+"FLAT 50% OFF at Taco Bell! DINE-IN and pay via District by Zomato. Offer valid from 9th-10th Oct only. Tap & pay here: link.district.in/DSTRKT/stTacoBell T&C",promotional,Real marketing message from a known brand; the binary model calls it spam because the training data labels marketing as spam

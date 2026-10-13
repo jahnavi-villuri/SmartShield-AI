@@ -1,0 +1,38 @@
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = [".venv", "notebooks"]
+
+[tool.ruff.lint]
+# E/F: basic errors, I: import order, B: likely bugs
+select = ["E", "F", "I", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# The report template contains long Markdown prose lines, which is fine.
+"scripts/prepare_sms.py" = ["E501"]
+"scripts/prepare_email.py" = ["E501"]
+"scripts/prepare_toxicity.py" = ["E501"]
+"scripts/prepare_phishing.py" = ["E501"]
+"src/training/*.py" = ["E501"]
+# SVG/CSS/HTML strings are long single lines by nature
+"src/ui/*.py" = ["E501"]
+"scripts/make_model_cards.py" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["src", "app"]
+# Offline pipeline code (training, plotting, big-file download) is verified by running the
+# pipeline and by the leakage/health checks, not by unit tests; the app and everything that
+# serves predictions is what the coverage gate protects.
+omit = [
+    "src/training/*",
+    "src/evaluation/plots.py",
+    "src/data/range_file.py",
+    "src/data/inspect_data.py",
+]
+
+[tool.coverage.report]
+show_missing = true

@@ -1,0 +1,4 @@
+model,params,feature,cv_pr_auc,cv_std
+logreg_word_norm,"{""C"": 100}",word,0.9633357353674571,0.012500884823273327
+logreg_char_norm,"{""C"": 3}",char,0.9650921357149687,0.0144640105714354
+naive_bayes_norm,"{""alpha"": 1.0}",count,0.9673239774716024,0.013433652571685847

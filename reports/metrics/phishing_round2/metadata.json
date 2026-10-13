@@ -1,0 +1,379 @@
+{
+  "module": "phishing",
+  "created_utc": "2026-10-12T15:12:49+00:00",
+  "python": "3.14.3",
+  "scikit_learn": "1.9.1",
+  "label_convention": "1 = phishing (bad), 0 = legitimate (good)",
+  "model": "hist_gb",
+  "model_params": {
+    "max_iter": 300,
+    "learning_rate": 0.1
+  },
+  "feature_names": [
+    "url_len",
+    "is_https",
+    "n_dots",
+    "n_hyphens",
+    "n_underscores",
+    "n_digits",
+    "digit_ratio",
+    "n_special",
+    "has_at",
+    "n_percent",
+    "has_long_hex",
+    "entropy_url",
+    "host_len",
+    "has_www",
+    "is_ip_host",
+    "has_port",
+    "n_host_labels",
+    "n_subdomains",
+    "host_hyphens",
+    "host_digits",
+    "host_digit_ratio",
+    "longest_host_label",
+    "entropy_host",
+    "has_punycode",
+    "rd_len",
+    "rd_hyphens",
+    "rd_digits",
+    "tld_len",
+    "tld_common",
+    "tld_suspicious",
+    "is_hosting_platform",
+    "is_shortener",
+    "n_login_words_host",
+    "n_brands_in_host",
+    "brand_not_registered_domain",
+    "path_len",
+    "path_depth",
+    "longest_path_segment",
+    "path_digits",
+    "entropy_path",
+    "has_path",
+    "ends_with_script_ext",
+    "risky_extension",
+    "double_slash_in_path",
+    "n_login_words_path",
+    "brand_in_path"
+  ],
+  "score_type": "probability",
+  "threshold": 0.5956289543067843,
+  "threshold_rule": "highest validation recall with at most 2% of legitimate URLs flagged",
+  "selection_rule": "best validation PR-AUC; ties (within 0.003) -> ['logreg_features', 'random_forest', 'hist_gb', 'logreg_char']; guard: skip candidates flagging > 20% of hand-written legitimate URLs",
+  "guard_passed": true,
+  "query_and_fragment_ignored": true,
+  "seed": 42,
+  "trained_on": [
+    "phreshphish",
+    "phiusiil"
+  ],
+  "data_sizes": {
+    "train": 593943,
+    "val": 116890,
+    "test": 162718,
+    "compphish": 13399,
+    "phishbench": 910,
+    "openphish_2026-10-12": 286,
+    "challenge": 68
+  },
+  "date_ranges": {
+    "train+val": "2024-07-02 to 2025-09-08",
+    "test": "2025-09-08 to 2025-12-16"
+  },
+  "metrics": {
+    "validation": {
+      "threshold": 0.5956289543067843,
+      "accuracy": 0.9673197022841988,
+      "precision": 0.9772723069810448,
+      "recall": 0.953262261666396,
+      "f1": 0.9651179779384907,
+      "false_positive_rate": 0.019999023644085723,
+      "roc_auc": 0.9919045647884295,
+      "pr_auc": 0.9912169363616401,
+      "tn": 60224,
+      "fp": 1229,
+      "fn": 2591,
+      "tp": 52846,
+      "n": 116890,
+      "positives": 55437
+    },
+    "test_temporal": {
+      "threshold": 0.5956289543067843,
+      "accuracy": 0.9226391671480721,
+      "precision": 0.9579467574245886,
+      "recall": 0.8618346545866364,
+      "f1": 0.9073526164716272,
+      "false_positive_rate": 0.029672679423213992,
+      "roc_auc": 0.9676825995724426,
+      "pr_auc": 0.9681532321112677,
+      "tn": 88489,
+      "fp": 2706,
+      "fn": 9882,
+      "tp": 61641,
+      "n": 162718,
+      "positives": 71523
+    },
+    "validation_by_source": {
+      "phiusiil": {
+        "threshold": 0.5956289543067843,
+        "accuracy": 0.9811447614593077,
+        "precision": 0.9996324340219069,
+        "recall": 0.9550498665542914,
+        "f1": 0.9768327287094573,
+        "false_positive_rate": 0.0002503755633450175,
+        "roc_auc": 0.9992640808382119,
+        "pr_auc": 0.9993610368590591,
+        "tn": 19965,
+        "fp": 5,
+        "fn": 640,
+        "tp": 13598,
+        "n": 34208,
+        "positives": 14238
+      },
+      "phreshphish": {
+        "threshold": 0.5956289543067843,
+        "accuracy": 0.9615998645412545,
+        "precision": 0.9697568689464321,
+        "recall": 0.9526444816621763,
+        "f1": 0.9611245117606004,
+        "false_positive_rate": 0.02950606272448955,
+        "roc_auc": 0.9865078713411592,
+        "pr_auc": 0.9859791790101201,
+        "tn": 40259,
+        "fp": 1224,
+        "fn": 1951,
+        "tp": 39248,
+        "n": 82682,
+        "positives": 41199
+      }
+    },
+    "test_unseen_groups": {
+      "threshold": 0.5956289543067843,
+      "accuracy": 0.8924815010570825,
+      "precision": 0.9630426901114837,
+      "recall": 0.8672434550166302,
+      "f1": 0.9126359527158333,
+      "false_positive_rate": 0.0611479773553781,
+      "roc_auc": 0.9490633641068084,
+      "pr_auc": 0.9757735901952795,
+      "tn": 25042,
+      "fp": 1631,
+      "fn": 6506,
+      "tp": 42501,
+      "n": 75680,
+      "positives": 49007
+    },
+    "test_hosting_platforms": {
+      "threshold": 0.5956289543067843,
+      "accuracy": 0.9930492345883326,
+      "precision": 0.9934445274251099,
+      "recall": 0.9995825331886115,
+      "f1": 0.9965040785749958,
+      "false_positive_rate": 0.7314814814814815,
+      "roc_auc": 0.971820217144589,
+      "pr_auc": 0.9997315269693287,
+      "tn": 29,
+      "fp": 79,
+      "fn": 5,
+      "tp": 11972,
+      "n": 12085,
+      "positives": 11977
+    },
+    "test_by_month": {
+      "2025-09": {
+        "n": 31553,
+        "precision": 0.7272727272727273,
+        "recall": 0.503011322572874,
+        "false_positive_rate": 0.028574556601707903
+      },
+      "2025-10": {
+        "n": 110757,
+        "precision": 0.9599547806426366,
+        "recall": 0.8820262874036195,
+        "false_positive_rate": 0.030348463629623526
+      },
+      "2025-11": {
+        "n": 19421,
+        "precision": 0.9968276576459925,
+        "recall": 0.8894858463316002,
+        "false_positive_rate": 0.023211747986736146
+      },
+      "2025-12": {
+        "n": 987,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_positive_rate": 0.03242147922998987
+      }
+    },
+    "external": {
+      "compphish": {
+        "threshold": 0.5956289543067843,
+        "accuracy": 0.8436450481379207,
+        "precision": 0.7893747061589093,
+        "recall": 0.8702487906012439,
+        "f1": 0.8278412359273564,
+        "false_positive_rate": 0.17658651951123375,
+        "roc_auc": 0.9091571895585964,
+        "pr_auc": 0.912623232388045,
+        "tn": 6267,
+        "fp": 1344,
+        "fn": 751,
+        "tp": 5037,
+        "n": 13399,
+        "positives": 5788
+      },
+      "phishbench": {
+        "threshold": 0.5956289543067843,
+        "accuracy": 0.4032967032967033,
+        "precision": 0.4346793349168646,
+        "recall": 0.8452655889145496,
+        "f1": 0.5741176470588235,
+        "false_positive_rate": 0.9979035639412998,
+        "roc_auc": 0.4558852721735636,
+        "pr_auc": 0.6124598951406487,
+        "tn": 1,
+        "fp": 476,
+        "fn": 67,
+        "tp": 366,
+        "n": 910,
+        "positives": 433
+      },
+      "openphish_2026-10-12": {
+        "n": 286,
+        "detection_rate": 0.8601398601398601
+      }
+    },
+    "challenge": {
+      "legit_n": 56,
+      "legit_flagged": 7,
+      "phish_n": 12,
+      "phish_caught": 12,
+      "by_kind": {
+        "reference": {
+          "n": 6,
+          "flagged": 1
+        },
+        "code": {
+          "n": 6,
+          "flagged": 0
+        },
+        "news": {
+          "n": 6,
+          "flagged": 0
+        },
+        "shopping": {
+          "n": 6,
+          "flagged": 0
+        },
+        "video_social": {
+          "n": 5,
+          "flagged": 0
+        },
+        "government_education": {
+          "n": 6,
+          "flagged": 0
+        },
+        "login_and_banking_pages": {
+          "n": 10,
+          "flagged": 1
+        },
+        "hosting_platform_legit": {
+          "n": 6,
+          "flagged": 5
+        },
+        "phishing_style": {
+          "n": 12,
+          "flagged": 12
+        },
+        "homepage": {
+          "n": 5,
+          "flagged": 0
+        }
+      }
+    }
+  },
+  "ablations": {
+    "all features": {
+      "n_features": 46,
+      "test_pr_auc": 0.9660072050873704,
+      "test_recall": 0.8704612502271997,
+      "test_fpr": 0.03500191896485553,
+      "challenge_legit_flagged": 5
+    },
+    "without www / https": {
+      "n_features": 44,
+      "test_pr_auc": 0.9694552714290727,
+      "test_recall": 0.8343889378241964,
+      "test_fpr": 0.030001644827019024,
+      "challenge_legit_flagged": 5
+    },
+    "without free-hosting / shortener flags": {
+      "n_features": 44,
+      "test_pr_auc": 0.9646575654872724,
+      "test_recall": 0.8640577156998448,
+      "test_fpr": 0.037984538626021164,
+      "challenge_legit_flagged": 4
+    },
+    "host only (no path features)": {
+      "n_features": 35,
+      "test_pr_auc": 0.9568354234390094,
+      "test_recall": 0.8286425345692994,
+      "test_fpr": 0.03696474587422556,
+      "challenge_legit_flagged": 7
+    }
+  },
+  "top_features": [
+    {
+      "feature": "is_https",
+      "importance": 0.1573466240476602
+    },
+    {
+      "feature": "has_www",
+      "importance": 0.11758764961572835
+    },
+    {
+      "feature": "n_subdomains",
+      "importance": 0.07613015702461116
+    },
+    {
+      "feature": "is_hosting_platform",
+      "importance": 0.0737301932048593
+    },
+    {
+      "feature": "entropy_host",
+      "importance": 0.05502058982654396
+    },
+    {
+      "feature": "path_len",
+      "importance": 0.05461662530848563
+    },
+    {
+      "feature": "host_hyphens",
+      "importance": 0.037300937604164225
+    },
+    {
+      "feature": "host_len",
+      "importance": 0.03437049084435869
+    },
+    {
+      "feature": "path_depth",
+      "importance": 0.031725516588168856
+    },
+    {
+      "feature": "entropy_path",
+      "importance": 0.02840959878264909
+    }
+  ],
+  "inference_ms_per_url": 41.8683583335951,
+  "model_file_mb": 2.19,
+  "model_sha256": "031140ca5e028bf71149e83d2350c5458a6531ffbf065f4a0722c7dbfffc897f",
+  "limitations": [
+    "Reads only the URL text: no page content, certificate, domain age or reputation data.",
+    "The query string and fragment are ignored.",
+    "Shortened links cannot be judged without following them, which this project never does.",
+    "Free-hosting platforms host both legitimate and phishing pages; the URL text alone often cannot separate them.",
+    "Public datasets contain legitimate URLs mostly from popular sites; small unknown legitimate sites may look unusual.",
+    "Trained on 2024-2025 data; phishing changes quickly."
+  ]
+}

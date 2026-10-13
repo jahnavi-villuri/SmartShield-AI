@@ -1,0 +1,34 @@
+text,label,kind
+"Rs 300.00 has been credited to your A/c XX1234 on 12-Oct-26. Avl Bal Rs 5,420.50.",0,bank_alert
+"Rs.1,250 debited from A/c XX4321 on 12/10/26 towards UPI/ref 4829103. Avl bal Rs 8,100.",0,bank_alert
+"INR 2,000.00 withdrawn at ATM on 11-Oct. Available balance INR 14,320.75. If not you, call the number on your card.",0,bank_alert
+"Your a/c no. XX5678 is credited with Rs.45,000.00 on 01-Oct-26 by salary. Total bal Rs.52,310.40.",0,bank_alert
+"Rs 499 paid to Metro Mart via UPI. Ref no 61920384. Balance Rs 2,311.",0,bank_alert
+"Dear customer, Rs.3,500.00 was debited from your account ending 9021 for EMI. Next due 05-Nov.",0,bank_alert
+"Txn of Rs 780.00 on your card ending 4455 at Fuel Station was successful. Not you? Block card in the app.",0,bank_alert
+"Payment of Rs 1,180 received for your electricity bill. Thank you. Receipt no 77120.",0,bank_alert
+"Your account XX3344 has been credited by Rs 300/- on 10-10-2026. Cheque no 000231 cleared.",0,bank_alert
+"Rs. 15,000 transferred to R. Kumar from A/c XX7788 via NEFT. Ref 2610120045. Avl Bal Rs 31,250.",0,bank_alert
+"Rs 120.00 debited for mobile recharge of 98XXXXXX10. Bal Rs 640.25.",0,bank_alert
+"Your OTP for the Rs 2,500 transaction is 483920. Valid for 10 minutes. Do not share it with anyone.",0,otp
+"Rs 75 refund for order 8812 has been credited to your wallet.",0,bank_alert
+"Min amount due Rs 1,430 on your credit card ending 2299 is payable by 20-Oct. Pay in the app.",0,bank_alert
+"Salary of Rs 62,000 credited on 30-Sep-26. Have a great month!",0,bank_alert
+"Hi, I sent you Rs 500 for the cab. Please check and confirm.",0,personal
+"Can you transfer Rs 2000 to my account by evening? I will return it on Friday.",0,personal
+"Rent of Rs 8,000 paid. Receipt attached in mail.",0,personal
+"The bill came to Rs 1,350 in total, I will split it with you.",0,personal
+"Your appointment is confirmed for 14 Oct at 10:30. Consultation fee Rs 400 payable at the clinic.",0,service
+"Your parcel will be delivered today between 2 and 5 pm. Pay Rs 0 - already prepaid.",0,service
+"Your electricity bill of Rs 1,640 is due on 18 Oct. Pay at the office or the official website.",0,service
+"Dear user, your plan of Rs 299 is active till 09-Nov-26. 1.5GB/day. Thank you.",0,service
+"Rs 50 off on your next order with code FIRST50. Valid till Sunday. Reply STOP to opt out.",1,promo
+"Your account has been suspended. Verify now at http://secure-bank-login.example to avoid closure.",1,phishing
+"URGENT: Your KYC has expired. Account will be blocked in 24 hours. Update at http://kyc-update.example",1,phishing
+"Congratulations! You have won Rs 25,00,000 in the lucky draw. Call 09061701461 to claim your prize.",1,prize
+"Get a Rs 50,000 instant loan without documents! Click http://quick-loan.example now.",1,loan
+"Your SIM will be blocked today. Share the OTP sent to your phone to continue the service.",1,phishing
+"Dear customer, Rs 9,999 reward points expire today. Redeem now http://redeem-now.example",1,phishing
+"You are selected for a free gift worth Rs 5,000. Reply YES to 56767 to claim.",1,prize
+"FREE entry to win a new phone! Text WIN to 80082 now. T&Cs apply.",1,prize
+"Final notice: your electricity will be disconnected tonight. Call 9XXXXXXXXX immediately to pay Rs 10.",1,phishing

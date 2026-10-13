@@ -1,0 +1,44 @@
+subject,body,label,kind
+Meeting moved to Thursday 3pm,"Hi team,
+
+The design review has moved from Wednesday to Thursday at 3pm in Room 4B. The agenda is unchanged. Please add your notes to the shared doc before then.
+
+Thanks,
+Priya",0,work
+Your order #48213 has shipped,"Hello Jahnavi,
+
+Good news - your order has shipped and should arrive by Monday. You can track the parcel with the carrier using tracking number 1Z4829. If you have any questions, reply to this email.
+
+The Store Team",0,shipping
+Password reset requested,"We received a request to reset the password for your account. If you made this request, use the link below within 30 minutes: https://accounts.example.com/reset?token=abc123. If you did not request it, you can ignore this email and your password will stay the same.",0,security
+Your weekly digest: 5 articles you might like,Here are this week's top stories from the newsletter you subscribed to. 1. How to write better tests. 2. A beginner's guide to data cleaning. 3. What changed in Python 3.14. Unsubscribe any time from your account settings.,0,newsletter
+Updated leave policy for 2026,"Dear colleagues, Human Resources has updated the annual leave policy effective 1 January. The full document is on the intranet under Policies. Please read it and contact HR if you have questions. Regards, People Operations",0,work
+[repo] Pull request #212: fix date parsing,"alex opened a pull request: Fix date parsing for ISO strings. 2 files changed, 14 additions, 3 deletions. Reply to this email to comment, or view it on the project page.",0,notification
+Your statement is ready,"Your monthly account statement for September is now available in your online banking. For your security, we never include account numbers or links asking for your password in email. Log in through our official app to view it.",0,bank
+"Invitation: Project sync @ Fri Oct 16, 10:00 - 10:30","You have been invited to the following event. Project sync. When: Friday 16 October, 10:00-10:30. Where: video call. Joining info is in the calendar entry. Yes, No, Maybe.",0,calendar
+Semester registration opens Monday,"Dear student, registration for the spring semester opens on Monday at 9am. Check your advisor's approval status in the student portal and clear any holds before then. Office of the Registrar",0,education
+Your flight itinerary,"Thank you for booking. Outbound: Hyderabad to Delhi, 14 Nov, departs 07:20, arrives 09:40. Booking reference K7MZ2Q. Web check-in opens 48 hours before departure. Have a pleasant trip.",0,travel
+"Appointment reminder: Dr. Rao, Tuesday 11:30","This is a reminder of your appointment on Tuesday at 11:30 at the clinic. Please arrive 10 minutes early and bring your previous reports. To reschedule, call the front desk.",0,health
+quick question about the report,"Hey, did you get a chance to look at the draft I sent yesterday? No rush, but I'd like to send it to the committee on Friday. Let me know if the numbers in section 3 look right to you. Thanks!",0,personal
+Dinner on Sunday?,"Hi! Are you free for dinner on Sunday? Mom is making biryani and says everyone should come around 7. Let me know and I will tell her how many we will be. Love, Anita",0,personal
+Your package was delivered,"Your package was delivered today at 2:14 pm and left at the front desk. If you did not receive it, contact the sender. Thank you for shopping with us.",0,shipping
+Your verification code,"Your verification code is 482913. It expires in 10 minutes. Do not share this code with anyone. If you did not try to sign in, you can safely ignore this message.",0,security
+Storage almost full,"You have used 92% of your cloud storage. To free up space, delete old files or upgrade your plan from the storage page in your account settings. No action is needed if you are happy with your current plan.",0,notification
+Receipt for your payment,"Thanks for your payment of $12.00 to Example Music. Your subscription renews on 3 November. You can cancel any time from your account page. This is a receipt, not an invoice.",0,receipt
+Assignment 3 grades are posted,"Hello class, grades for Assignment 3 are now visible in the course page. The average was 78. If you would like to discuss your mark, come to office hours on Wednesday afternoon.",0,education
+Team lunch Friday,Reminder that we are having a team lunch this Friday at 12:30 at the usual place. Vegetarian options will be arranged. Please reply with any dietary requirements.,0,work
+Invoice 2026-0145 attached for your review,"Hi Sam, attached is the invoice for the consulting work completed in September. Payment is due within 30 days to the bank details already on file. Please confirm receipt. Best regards, Maria Lopez, Lopez Consulting",0,work
+We have updated our privacy policy,We are writing to let you know that we have updated our privacy policy. The changes take effect on 1 December. You can read the full policy on our website. You do not need to take any action.,0,notification
+Welcome to the community forum,"Welcome aboard! Your account is ready. Say hello in the introductions thread, and read the community guidelines before posting. If you did not create this account, tell us so we can remove it.",0,notification
+Interview schedule for Monday,"Dear Jahnavi, we would like to invite you for an interview on Monday at 2pm. The interview will last about 45 minutes and be held on video call; the link will be sent separately. Please confirm your availability. Regards, Talent Team",0,work
+Library book due soon,The following item is due in 3 days: 'Introduction to Statistical Learning'. You can renew it online from your library account if no one else has requested it.,0,education
+Action required: confirm your payroll details,"Dear employee, HR is updating payroll records. Confirm your bank details within 24 hours at http://payroll-update-portal.example/login or your next salary may be delayed.",1,phishing
+DocuSign: you have a document waiting,A secured document has been shared with you. REVIEW DOCUMENT: http://docusign-secure-view.example/open/8841. This link expires today. Do not forward this email.,1,phishing
+Earn 5% daily with our crypto platform,Join thousands of investors earning 5% per day with guaranteed returns. Deposit as little as $100 and withdraw any time. Limited slots left. Register now: http://crypto-gains.example/join,1,scam
+"Congratulations, you are our lucky winner","You have been selected to receive a $850,000 prize from the International Lottery Board. To claim your winnings send your full name, address and a processing fee of $250 to claims@lottery-board.example",1,scam
+"Cheap meds, no prescription needed",Order your medication online without a prescription at up to 80% off. Discreet shipping worldwide. Click here: http://pharma-deals.example/order,1,spam
+Your account has been suspended,We detected unusual activity and have limited your account. Verify your identity now to restore access: http://account-verify-center.example/restore. Failure to act within 12 hours will result in permanent closure.,1,phishing
+"Job offer - work from home, $400 per day","We are hiring remote assistants. No experience needed. You will earn $400 per day. To start, reply with your WhatsApp number and a copy of your ID to hr-desk@jobs-global.example",1,scam
+Final notice: unpaid invoice,"This is your final notice. Invoice #99812 for $1,940 is overdue. Open the attached statement and pay immediately to avoid legal action: http://invoice-pay-now.example/99812",1,phishing
+You have a tax refund waiting,"The tax authority has calculated a refund of $1,284.50 for you. To receive it, submit your card details at http://tax-refund-gov.example/claim within 48 hours.",1,phishing
+Increase your followers instantly,"Buy 10,000 real followers for only $9. Instant delivery, 100% safe, no password needed. Visit http://followers-boost.example today and get a free bonus pack!",1,spam
